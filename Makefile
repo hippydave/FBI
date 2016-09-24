@@ -15,7 +15,7 @@ endif
 
 # COMMON CONFIGURATION #
 
-NAME := FBI
+NAME := Newquay
 
 BUILD_DIR := build
 OUTPUT_DIR := output
@@ -39,10 +39,10 @@ VERSION_MICRO := $(word 3, $(VERSION_PARTS))
 # 3DS CONFIGURATION #
 
 TITLE := $(NAME)
-DESCRIPTION := Open source CIA installer.
-AUTHOR := Steveice10
-PRODUCT_CODE := CTR-P-CFBI
-UNIQUE_ID := 0xF8001
+DESCRIPTION := Do a thing.
+AUTHOR := hippydave
+PRODUCT_CODE := CTR-P-NWQY
+UNIQUE_ID := 0xF19F0
 
 SYSTEM_MODE := 64MB
 SYSTEM_MODE_EXT := Legacy
