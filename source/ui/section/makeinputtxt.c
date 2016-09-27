@@ -4,6 +4,7 @@
 #include <3ds.h>
 
 #include "section.h"
+#include "task/task.h"
 #include "../error.h"
 #include "../list.h"
 #include "../prompt.h"
@@ -21,9 +22,11 @@ typedef struct {
     char shortDescription[0x80];
 } titlekey;
 
-static char eTKpath[] = "/encTitleKeys.bin";
+static char eTKpath1[] = "/files9/encTitleKeys.bin";
+static char eTKpath2[] = "/encTitleKeys.bin";
 static char itpath[] = "/CIAngel/input.txt";
 static char jsonpath[] = "/json_dec.json";
+char eTKpath[FILE_PATH_MAX];
 unsigned long numTitles, t;
 titlekey tkeys[TITLES_MAX];
 list_item litem[TITLES_MAX];
@@ -98,8 +101,14 @@ void make_input_txt() {
             FILE *json_dec = fopen(jsonpath, "rb");
             buf = (char*)ImportFile(jsonpath, 0);
             fclose(json_dec);
-            
-            if (FileExists(eTKpath)) {
+            if (FileExists(eTKpath1)) {
+                strncpy(eTKpath, eTKpath1, strlen(eTKpath1));
+            } else if (FileExists(eTKpath2)) {
+                strncpy(eTKpath, eTKpath2, strlen(eTKpath2));
+            } else {
+                eTKpath[0] = 0;
+            }
+            if (eTKpath[0] != 0) {    //(FileExists(eTKpath)) {
                 FILE *eTK = fopen(eTKpath, "rb");
                 u8* eTKdata = ImportFile(eTKpath, 0);
                 fclose(eTK);
