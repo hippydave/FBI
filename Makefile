@@ -34,7 +34,7 @@ VERSION_PARTS := $(subst ., ,$(shell git describe --tags --abbrev=0))
 
 VERSION_MAJOR := $(word 1, $(VERSION_PARTS))
 VERSION_MINOR := $(word 2, $(VERSION_PARTS))
-VERSION_MICRO := $(word 3, $(VERSION_PARTS))
+#VERSION_MICRO := $(word 3, $(VERSION_PARTS))
 
 # 3DS CONFIGURATION #
 
