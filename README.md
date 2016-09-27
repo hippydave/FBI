@@ -4,7 +4,8 @@ To help install titles recently added to that titlekey site, that have a decrypt
 
 Run this app to download decTitleKeys.bin, reboot to Decrypt9 to encrypt it to encTitleKeys.bin, then run this app again to select which title and generate an input.txt - which can be opened with CIAngel to install the chosen title.
 
-![QR](https://raw.githubusercontent.com/hippydave/Newquay/qr/latest.png)
+Download version 0.1:
+![QR](https://raw.githubusercontent.com/hippydave/Newquay/master/qr/qrcode.0.1.png)
 
 # Credit
 
