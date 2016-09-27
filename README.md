@@ -7,8 +7,11 @@ Run this app to download decTitleKeys.bin, reboot to Decrypt9 to encrypt it to e
 # Credit
 
 Based on FBI by Steveice10: https://github.com/Steveice10/FBI - for app base and user interface.
+
 Utility functions from 3DSGuy and possibly others.
+
 json library by James McLaughlin et al.
+
 Smealum and the usual suspects for ctrulib etc.
 
-If I've missed anyone just tell me.'
+If I've missed anyone just tell me.
