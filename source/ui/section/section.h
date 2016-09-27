@@ -1,6 +1,8 @@
 #pragma once
 
-void dumpnand_open();
+void download_dectitlekeys();
+void make_input_txt();
+/*void dumpnand_open();
 void extsavedata_open();
 void files_open(FS_ArchiveID archiveId, FS_Path archivePath);
 void files_open_sd();
@@ -15,4 +17,4 @@ void systemsavedata_open();
 void tickets_open();
 void titles_open();
 void titledb_open();
-void update_open();
+void update_open();*/

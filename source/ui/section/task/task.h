@@ -211,7 +211,7 @@ typedef struct {
     Handle cancelEvent;
 } populate_titledb_data;
 
-void task_init();
+/*void task_init();
 void task_exit();
 bool task_is_quit_all();
 Handle task_get_pause_event();
@@ -248,4 +248,4 @@ Result task_populate_titles(populate_titles_data* data);
 
 void task_free_titledb(list_item* item);
 void task_clear_titledb(linked_list* items);
-Result task_populate_titledb(populate_titledb_data* data);
+Result task_populate_titledb(populate_titledb_data* data);*/

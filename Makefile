@@ -39,7 +39,7 @@ VERSION_MICRO := $(word 3, $(VERSION_PARTS))
 # 3DS CONFIGURATION #
 
 TITLE := $(NAME)
-DESCRIPTION := Do a thing.
+DESCRIPTION := Help install new additions to that titlekey site.
 AUTHOR := hippydave
 PRODUCT_CODE := CTR-P-NWQY
 UNIQUE_ID := 0xF19F0
@@ -51,7 +51,7 @@ ICON_FLAGS := --flags visible,ratingrequired,recordusage --cero 153 --esrb 153 -
 
 ROMFS_DIR := romfs
 BANNER_AUDIO := meta/audio.wav
-BANNER_IMAGE := meta/banner.cgfx
+BANNER_IMAGE := meta/banner.png
 ICON := meta/icon.png
 
 # INTERNAL #

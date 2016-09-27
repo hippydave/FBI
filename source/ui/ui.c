@@ -189,7 +189,7 @@ static void ui_draw_top(ui_view* ui) {
     float wifiY = topScreenTopBarY + (topScreenTopBarHeight - wifiHeight) / 2;
     screen_draw_texture(wifiIcon, wifiX, wifiY, wifiWidth, wifiHeight);
 
-    char buffer[128];
+    /*char buffer[128];
     char* currBuffer = buffer;
     FS_ArchiveResource resource = {0};
 
@@ -240,7 +240,7 @@ static void ui_draw_top(ui_view* ui) {
     float freeSpaceHeight;
     screen_get_string_size(NULL, &freeSpaceHeight, buffer, 0.35f, 0.35f);
 
-    screen_draw_string(buffer, topScreenBottomBarX + 2, topScreenBottomBarY + (topScreenBottomBarHeight - freeSpaceHeight) / 2, 0.35f, 0.35f, COLOR_TEXT, true);
+    screen_draw_string(buffer, topScreenBottomBarX + 2, topScreenBottomBarY + (topScreenBottomBarHeight - freeSpaceHeight) / 2, 0.35f, 0.35f, COLOR_TEXT, true);*/
 }
 
 static void ui_draw_bottom(ui_view* ui) {
