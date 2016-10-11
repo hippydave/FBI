@@ -75,7 +75,7 @@ static void titlemenu_update(ui_view* view, void* data, linked_list* items, list
     }
     
     if(linked_list_size(items) == 0) {
-        for (int i = 0; i < numTitles; i++) {
+        for (int i = numTitles - 1; i > -1; i--) {  //reverse order to list newest entries first
             litem[i] = (list_item){"1234567890123456", COLOR_TEXT, NULL};
             sprintf(litem[i].name, "%s", tkeys[i].shortDescription);
             linked_list_add(items, &litem[i]);
