@@ -13,7 +13,7 @@
 static char dTKpath1[] = "/files9/decTitleKeys.bin";
 static char dTKpath2[] = "/decTitleKeys.bin";
 char dTKpath[FILE_PATH_MAX];
-static char url[] = "https://3ds.titlekeys.com/downloadmissingforencryption";
+static char url[] = "https://3ds.titlekeys.gq/downloadmissingforencryption";
 
 u32 numTitles = 0;
 
