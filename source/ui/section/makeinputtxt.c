@@ -94,7 +94,7 @@ void make_input_txt() {
         char* buf;
         FILE *json_dec = fopen(jsonpath, "wb");
         Result res;
-        res = DownloadFile("https://3ds.titlekeys.com/json_dec", json_dec, false);
+        res = DownloadFile("http://3ds.titlekeys.gq/json_dec", json_dec, false);
         fclose(json_dec);
         if(R_SUCCEEDED(res)) {
             bufSize = (u32)GetFileSize_u64(jsonpath);
